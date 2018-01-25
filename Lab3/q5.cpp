@@ -4,14 +4,6 @@
 
 using namespace std;
 
-int factorial(int c){
-	int ans=1;
-	for(int i=1;i<=c;i++){
-		ans*=i;
-	}
-	return ans;
-}
-
 int main(int argc, char *argv[])
 {
 	MPI_Init(&argc,&argv);

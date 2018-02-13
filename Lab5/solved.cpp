@@ -26,7 +26,7 @@ int main(void)
 	FILE *fp;
 	char *source_str;
 	size_t source_size;
-	fp = fopen("vectorCLKernel.cl", "r");
+	fp = fopen("solved_kernel.cl", "r");
 	if (!fp)
 	{
 		fprintf(stderr, "Failed to load kernel.\n");
@@ -102,12 +102,4 @@ int main(void)
 	free(C);
 	getchar();
 	return 0;
-}
-	//vectorCLKernel.cl
-__kernel void vector_add(__global int *A, __global int *B, __global int *C)
-{
-	// Get the index of the current work item
-	int i = get_global_id(0);
-	// Do the operation
-	C[i] = A[i] + B[i];
 }

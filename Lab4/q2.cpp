@@ -7,7 +7,7 @@ float fxn(float x){
 }
 int main(int argc, char* argv[])
 {
-	int rank,size,  i;
+	int rank,size;
 	float fact,factsum;
 	MPI_Init(&argc,&argv);
 	MPI_Comm_rank(MPI_COMM_WORLD,&rank);

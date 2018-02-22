@@ -7,7 +7,7 @@ __kernel void octal_val(__global int *A, __global int *B)
 
 	int rem=0,q=0;
 	while(n!=0){
-		q=n%8
+		q=n%8;
 		n=n/8;
 		rem=rem*10+q;
 	}

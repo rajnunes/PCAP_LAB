@@ -1,4 +1,4 @@
-#include <iostream>
+ #include <iostream>
 #include "mpi.h"
 
 using namespace std;

@@ -1,0 +1,9 @@
+__kernel void row_powers(__global int* As, __global int* Bs, int width)
+{
+	int row = get_global_id(0);
+	int col = get_global_id(1);
+	
+	for(int i=0;i<=row;i++)
+		Bs[row + width * col] *= As[row + width * col];
+	
+}

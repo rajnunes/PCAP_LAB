@@ -1,0 +1,4 @@
+__kernel void search(__global char* A, __global char* B, __global char* c, int n, int m)
+{
+
+} 

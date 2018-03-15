@@ -1,0 +1,5 @@
+__kernel void search(__global char* A, __global char* B, __global int* C, int n, int m)
+{
+	int x = get_global_id(0);
+	C[x] = n + m;
+} 

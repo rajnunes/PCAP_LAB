@@ -1,0 +1,36 @@
+15:30:30 **** Incremental Build of configuration Debug for project lab8_3 ****
+make all 
+Building file: ../lab8_3.c
+Invoking: GCC C Compiler
+gcc -I../usr/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lab8_3.d" -MT"lab8_3.d" -o "lab8_3.o" "../lab8_3.c"
+../lab8_3.c: In function ‘main’:
+../lab8_3.c:42:2: warning: ‘clCreateCommandQueue’ is deprecated [-Wdeprecated-declarations]
+  cl_command_queue command_queue = clCreateCommandQueue(context, device_id, NULL, &ret);
+  ^
+In file included from ../lab8_3.c:2:0:
+/usr/include/CL/cl.h:1359:1: note: declared here
+ clCreateCommandQueue(cl_context                     /* context */,
+ ^
+../lab8_3.c:42:76: warning: passing argument 3 of ‘clCreateCommandQueue’ makes integer from pointer without a cast [-Wint-conversion]
+  cl_command_queue command_queue = clCreateCommandQueue(context, device_id, NULL, &ret);
+                                                                            ^
+In file included from ../lab8_3.c:2:0:
+/usr/include/CL/cl.h:1359:1: note: expected ‘cl_command_queue_properties {aka long unsigned int}’ but argument is of type ‘void *’
+ clCreateCommandQueue(cl_context                     /* context */,
+ ^
+Finished building: ../lab8_3.c
+ 
+Building target: lab8_3
+Invoking: GCC C Linker
+gcc -L/usr/lib/x86_64-linux-gnu -o "lab8_3"  ./lab8_3.o   -lOpenCL
+Finished building target: lab8_3
+ 
+15:30:31 **** Incremental Build of configuration Debug for project lab8_3 ****
+make all 
+make: Nothing to be done for 'all'.
+15:31:04 **** Incremental Build of configuration Debug for project lab8_3 ****
+make all 
+make: Nothing to be done for 'all'.
+15:31:44 **** Incremental Build of configuration Debug for project lab8_2 ****
+make all 
+make: Nothing to be done for 'all'.

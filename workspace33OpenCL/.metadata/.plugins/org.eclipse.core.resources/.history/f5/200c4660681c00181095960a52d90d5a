@@ -1,0 +1,20 @@
+__kernel void transpose(__global int* As, __global int* Bs, int n, int m)
+{
+	int i = get_global_id(0);
+	int j = get_global_id(1);
+	
+	Bs[j * n + i] = As[i * m + j];
+	
+}
+
+1 2 3 4
+5 6 7 8
+
+1 5
+2 6
+3 7
+4 8
+
+0 -> 0
+1 -> 2
+2 -> 4
